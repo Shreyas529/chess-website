@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static' , filename='/css/leaderboard.css')}}">
+    <title>Leaderboard</title>
+</head>
+<body>
+    <div class="top" style="background-image: url({{url_for('static', filename='media/chess-animated.gif')}})">
+        <div class="header">
+            <a href="/">How to Chess!</a>
+            <div class="right-links">
+                <a href="#">Leaderboard</a>
+                <a href="../tournments.html">Tournments</a>
+                <a href="../news.html">News!</a>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class = "card" id="leaderboard-container">
+        <h1>Top Rated players</h1>
+        <div id="table">{{context | safe}}</div>
+    </div>
+</body>
+</html>
