@@ -1,0 +1,201 @@
+
+html {
+    overflow-y: scroll;
+}
+body{
+    background-color: #1F2937;
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* border: 5px solid black; */
+    font-size: larger;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.top{
+    margin: 0px;
+    /* border: 5px solid black; */
+    background-image: url(../media/chess-animated.gif);
+    background-position: center;
+    /* background-color: 	#74a740; */
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.top a{
+    text-decoration: none;
+    color: #F9FAF8;
+}
+
+.top .header{
+    padding-top: 5px;
+    padding-bottom: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: x-large;
+    font-weight: bolder;
+    display: flex;
+    flex:1;
+    justify-content: space-between;
+
+}
+
+.top .right-links{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    flex: auto;
+    justify-content: flex-end;
+}
+
+.top .content{
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.top .text{
+    font-weight: bolder;
+    font-size: 18px;
+    color: #F9FAF8;
+}
+
+.top .title.text{
+    font-weight: bolder;
+    font-size: 48px;
+}
+
+.top .content button{
+    padding: 8px 12px;
+    width: auto;
+    height: auto;
+    border: none;
+    margin-top: 5px;
+    background-color: black;
+    color:#ddd;
+    border-radius: 16px;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.top .content button:hover{
+    background-color: #ddd;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #000000;
+}
+
+.Content {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    justify-content: flex-start;
+}
+
+.Content a{
+    text-decoration: none;
+}
+
+.navigation-bar {
+    border: 1px solid black;
+    color: #1F2937;
+    /* display: flex; */
+    position: fixed;
+    left: 0;
+    top: 110px;
+    width: 200px;
+    padding: 20px;
+    padding-right: 40px;
+    justify-content: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px orange;
+}
+
+.navigation-bar a{
+    color: #1F2937;
+}
+
+.navigation-bar a:visited{
+    color: #1F2937;
+}
+
+.navigation-bar a:active , .navigation-bar a:hover{
+    width: fit-content;
+    color: orange;
+    font-weight: bold;
+}
+
+
+.content-wrapper{
+    
+    display: flex;
+    flex-direction: column;
+    margin-left: 240px;
+    padding: 30px;
+}
+
+.initial-setup{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px orange;
+}
+
+.initial-setup > img{
+    width: fit-content;
+    height: 300px;
+}
+
+.gameplay{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px orange;
+    margin-top: 20px;
+}
+
+.gameplay > img{
+    width: fit-content;
+    height: 300px;
+}
+
+.competition-rules{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px orange;
+    margin-top: 20px;
+}
+
+.Equipment{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px orange;
+    margin-top: 20px;
+}
