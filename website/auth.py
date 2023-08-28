@@ -2,7 +2,7 @@ from flask import Blueprint,redirect,url_for,render_template,request,session,fla
 from datetime import timedelta
 from .models import User
 from werkzeug.security import generate_password_hash , check_password_hash
-from . import db
+from . import db,oauth
 from flask_sqlalchemy import SQLAlchemy
 import time
 from flask_login import login_user,login_required,logout_user,current_user
@@ -11,6 +11,10 @@ from flask_mail import Mail , Message
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import smtplib
+import berserk
+from authlib.integrations.flask_client import OAuth
+import requests
+from flask import jsonify
 
 auth = Blueprint('auth',__name__)
 
@@ -26,10 +30,6 @@ def login():
                 # flash('Logged in Successfully!',category='success')
                 # flash('Redirecting to Home page...',category='success')
                 login_user(user,remember=True)
-                for i in range(1,6):
-                    #flash(f'{i}',category='success')
-                    #redirect(url_for('auth.login'))
-                    time.sleep(1)
                 return redirect(url_for('views.home'))
             
             else:
@@ -131,3 +131,58 @@ def forgot():
                 
     else :
         return render_template("forgot.html")
+    
+@auth.route('/lichess/login/')
+def login_lichess():
+    redirect_uri = url_for("auth.authorize", _external=True)
+    """
+    If you need to append scopes to your requests, add the `scope=...` named argument
+    to the `.authorize_redirect()` method. For admissible values refer to https://lichess.org/api#section/Authentication. 
+    Example with scopes for allowing the app to read the user's email address:
+    `return oauth.lichess.authorize_redirect(redirect_uri, scope="email:read")`
+    """
+    return oauth.lichess.authorize_redirect(redirect_uri , scope="email:read")
+
+@auth.route("/lichess/denied/")
+def denied():
+    return ("<h1>User denied entry</h1>")
+
+@auth.route('/lichess/authorize/')
+def authorize():
+    
+    if "error" in request.args and request.args["error"]=="access_denied":
+        return redirect(url_for("auth.denied"))
+    
+    token = oauth.lichess.authorize_access_token()
+    bearer = token['access_token']
+    headers = {'Authorization': f'Bearer {bearer}'}
+
+    # Add your API token to the headers
+    api_token = 'lip_wq82w70I7P9jPuRoS958'
+    headers['Authorization'] = f'Bearer {api_token}'
+    session = berserk.TokenSession(api_token)
+    client = berserk.Client(session=session)
+    print(client.account.get_email())
+    response = requests.get("https://lichess.org/api/account", headers=headers)
+    email = client.account.get_email()
+    name=response.json()['username']
+    user = User.query.filter_by(email=email).first()
+    password = str(random.randrange(1000000,9999999))
+    
+    if user:
+        setattr(user,'name',name)
+        setattr(user,'lichess',True)
+        db.session.commit()
+        return redirect(url_for('views.home'))
+    
+    else :
+        new_user=User(email=email,name=name,password=generate_password_hash(password,method='sha256'),lichess=True)
+        db.session.add(new_user)
+        db.session.commit()
+        flash(f'Account Created! {name}\nPassword has been sent to your email associated with lichess',category='success')
+        send_email(email,password)
+        user_created = User.query.filter_by(email=email).first()
+        login_user(user_created,remember=True)
+        return redirect(url_for('views.home'))
+            
+            
