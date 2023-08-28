@@ -25,7 +25,14 @@
                 <div class="text">Learn Everything there is to get started on your journey of chess</div>
                 <div class="buttons">
                     <button onclick="location.href='../sign-up.html'">Sign Up</button>
-                    <button onclick="location.href='../login.html'">Log in</button>
+                   
+                   {% if current_user.is_authenticated %}
+                    <button onclick="location.href='../logout.html'">Log Out</button>
+
+                    {% else %}
+                    <button onclick="location.href='../logout.html'">Log in</button>
+
+                    {% endif %}
                 </div>
             </div>
         

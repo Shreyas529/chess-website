@@ -9,7 +9,7 @@
 <body>
     <form class="card" method="POST">
 
-        <h1>Login</h1>
+        <h1>Forgot Password</h1>
 
         <div class="flashed-msg">
           {% with messages = get_flashed_messages(with_categories=true) %}
@@ -35,19 +35,10 @@
           <input type="email" name="email" placeholder="Email" />
         </div>
       
-        <div class="pasword">
-          <input type="password" name="password" placeholder="Password"/>
-        </div>
-    
-        <div class="forgot">
-          <a href="../forgot.html">Forgot password?</a>
-        </div>
-      
-        <input type="submit" name="button" class="Log in" value="Log in">
+        <input type="submit" name="Forgot" class="Forgot" value="Enter">
       
         <div>
           <p>Not a member? <a href="../sign-up.html">Register</a></p>
-          <p><a href="../home">Home Page</a></p>
         </div>
     
     </form>
