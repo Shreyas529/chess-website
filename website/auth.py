@@ -15,6 +15,10 @@ import berserk
 from authlib.integrations.flask_client import OAuth
 import requests
 from flask import jsonify
+import mpld3
+import matplotlib.pyplot as plt
+from datetime import datetime
+from collections import namedtuple
 
 auth = Blueprint('auth',__name__)
 
@@ -164,8 +168,42 @@ def authorize():
     client = berserk.Client(session=session)
     print(client.account.get_email())
     response = requests.get("https://lichess.org/api/account", headers=headers)
-    email = client.account.get_email()
+    email = (client.account.get_email())
     name=response.json()['username']
+    RatingHistoryEntry = namedtuple('RatingHistoryEntry', ['year', 'month', 'day', 'rating'])
+    data=client.users.get_rating_history(name)
+    fig, ax = plt.subplots(figsize=(10, 6))
+
+    # Iterate through the data
+    for entry in data:
+        user_name = entry['name']
+        points = entry['points']
+        
+        if points:
+            # Extract dates and ratings
+            dates = [datetime(entry.year, entry.month, entry.day) for entry in points]
+            ratings = [entry.rating for entry in points]
+            
+            line = ax.plot(dates, ratings, marker='o', label=user_name)[0]
+            ax.fill_between(dates, ratings, color=line.get_color(), alpha=0.2)
+
+    # Set labels and title
+    ax.set_xlabel('Date')
+    ax.set_ylabel('Rating')
+    ax.set_title('Rating vs Time')
+    ax.legend()
+
+    # Format x-axis date labels
+    plt.xticks(rotation=45)
+    ax.xaxis.set_major_formatter(plt.matplotlib.dates.DateFormatter('%Y-%m-%d'))
+
+    # Convert the plot to an interactive HTML plot using mpld3
+    html_plot = mpld3.fig_to_html(fig)
+
+    # Write the HTML content to a file (optional)
+    with open('./website/templates/interactive_plot.html', 'w') as f:
+        f.write(html_plot)
+
     user = User.query.filter_by(email=email).first()
     password = str(random.randrange(1000000,9999999))
     
@@ -173,7 +211,7 @@ def authorize():
         setattr(user,'name',name)
         setattr(user,'lichess',True)
         db.session.commit()
-        return redirect(url_for('views.home'))
+        login_user(user)
     
     else :
         new_user=User(email=email,name=name,password=generate_password_hash(password,method='sha256'),lichess=True)
@@ -183,6 +221,7 @@ def authorize():
         send_email(email,password)
         user_created = User.query.filter_by(email=email).first()
         login_user(user_created,remember=True)
-        return redirect(url_for('views.home'))
+        
+    return redirect(url_for('views.home'))
             
             

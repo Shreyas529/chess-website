@@ -86,37 +86,3 @@ body {
     font-size: larger;
     gap: 20px;
 }
-
-#news-container {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-
-}
-
-#new-container #news{
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 1;
-}
-
-article {
-    border:3px solid  #1F2937;
-    margin: 10px;
-    padding: 10px;
-}
-
-img{
-    display: flex;
-    flex: 1;
-    width: 100%;
-    max-width: 800px;
-}
-
-#news-container a{
-    color: #1F2937;
-}
-
-.ui_pagination-item-component{
-    display: none;
-} 

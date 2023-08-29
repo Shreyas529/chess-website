@@ -61,22 +61,24 @@
                     </p>
                 </div>
             </a>
-            <a href="">
-                <div class="card">
-                    <img src="{{ url_for('static' , filename='media/rook.png')}}">
-                    <p>
-                        Unlock the secrets of chess strategies and learn about the game in depth.
-                    </p>
-                </div>
-            </a>
-            <a href="">
+            {% if current_user.is_authenticated %}
+                <a href="../profile.html">
+                    <div class="card">
+                        <img src="{{ url_for('static' , filename='media/rook.png')}}">
+                        <p>
+                            Get some insights about you game
+                        </p>
+                    </div>
+                </a>
+            {% endif %}
+                <!-- <a href="">
                 <div class="card">
                     <img src="{{ url_for('static' , filename='media/queen.png')}}">
                     <p>
                         Want to test your skills, try out some puzzles!
                     </p>
                 </div>
-            </a>   
+            </a>    -->
 
         </div>
 

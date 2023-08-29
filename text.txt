@@ -1,78 +1,756 @@
-# app.permanent_session_lifetime=timedelta(minutes=5)
-# app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///users.sqlite3'
-# app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
+<div class="v5-section-content-wide">
+<div class="post-preview-list-component">
+<article class="post-preview-component post-preview-headline">
+<a class="post-preview-image" href="https://www.chess.com/news/view/2023-world-rapid-team-championship-day-3-wr-chess-wins">
+<img alt="WR Chess Clinches Gold In Penultimate Round" class="post-preview-thumbnail" src="https://images.chesscomfiles.com/uploads/v1/news/1276273.be9034a0.630x354o.c6134c7388ca.png" srcset="https://images.chesscomfiles.com/uploads/v1/news/1276273.be9034a0.630x354o.c6134c7388ca@2x.png"/>
+</a>
+<h2 class="post-preview-titlecontainer">
+<a class="post-preview-title" href="https://www.chess.com/news/view/2023-world-rapid-team-championship-day-3-wr-chess-wins">
 
-app = create_app()
-db=SQLAlchemy(app)
+                    WR Chess Clinches Gold In Penultimate Round
+                  </a>
+</h2>
+<div class="post-preview-meta">
+<div class="post-preview-meta-component">
+<span class="post-preview-meta-title">NM</span>
+<a class="post-preview-meta-username" href="https://www.chess.com/news/member/nm_vanessa" title="NM_Vanessa">
+                      NM_Vanessa
+                    </a>
+<div class="post-preview-meta-time">
+<span class="post-preview-meta-separator">|</span>
+<span class="icon-font-chess post-preview-meta-icon calendar"></span>
+<span class="post-preview-meta-content">
+<span title="Aug 29, 2023, 1:24:24 AM">4 hrs ago</span>
+</span>
+</div>
+</div>
+</div>
+<p class="post-preview-excerpt">
+                  On the last day, WR Chess completed their phenomenal run at the World Rapid Team Championship, clinching first with a round to spare. 
+It was truly a team victory as every member contributed, with several players turning in dazzling performances....
+                </p>
+</article>
+<article class="post-preview-component">
+<a class="post-preview-image" href="https://www.chess.com/news/view/scc-bracket-contest-2023">
+<img alt="The 2023 Speed Chess Championship Prediction Bracket Is Here" class="post-preview-thumbnail" src="https://images.chesscomfiles.com/uploads/v1/news/1273777.bd0e24e0.300x169o.c4a96da0151e.png" srcset="https://images.chesscomfiles.com/uploads/v1/news/1273777.bd0e24e0.300x169o.c4a96da0151e@2x.png"/>
+</a>
+<h2 class="post-preview-titlecontainer">
+<a class="post-preview-title" href="https://www.chess.com/news/view/scc-bracket-contest-2023">
 
-if __name__=="__main__":
-    with app.app_context():
-        db.create_all()
-    app.run(debug=True)
-         
+                    The 2023 Speed Chess Championship Prediction Bracket Is Here
+                  </a>
+</h2>
+<div class="post-preview-meta">
+<div class="post-preview-meta-component">
+<a class="post-preview-meta-username" href="https://www.chess.com/news/member/chesscom" title="CHESScom">
+                      CHESScom
+                    </a>
+<div class="post-preview-meta-time">
+<span class="post-preview-meta-separator">|</span>
+<span class="icon-font-chess post-preview-meta-icon calendar"></span>
+<span class="post-preview-meta-content">
+<span title="Aug 28, 2023, 1:26:22 PM">16 hrs ago</span>
+</span>
+</div>
+</div>
+</div>
+<p class="post-preview-excerpt">
+                  The 2023 Speed Chess Championship is sprinting towards us, with only a week left before the main event begins! Sixteen of the game's quickest thinkers will compete to see who can make it over the finish line and be crowned as this year's Speed Che...
+                </p>
+</article>
+<article class="post-preview-component">
+<a class="post-preview-image" href="https://www.chess.com/news/view/uk-government-announces-1-25m-dollar-investment-to-transform-english-chess">
+<img alt="UK Government Announces 1.25M Dollar Investment To Transform English Chess" class="post-preview-thumbnail" src="https://images.chesscomfiles.com/uploads/v1/news/1276191.ff6c6b49.300x169o.476c12db1e40.jpg" srcset="https://images.chesscomfiles.com/uploads/v1/news/1276191.ff6c6b49.300x169o.476c12db1e40@2x.jpg"/>
+</a>
+<h2 class="post-preview-titlecontainer">
+<a class="post-preview-title" href="https://www.chess.com/news/view/uk-government-announces-1-25m-dollar-investment-to-transform-english-chess">
 
-# @app.route("/login/",methods=["POST","GET"])
-# def login():
-    
-#     if request.method=="POST":
-#         session.permanent=True
-#         user=request.form["nm"]
-#         session["user"]=user
-        
-#         found_user=users.query.filter_by(name=user).first()
-#         if found_user:
-#             session['email']=found_user.email
-            
-#         else:
-#             usr=users(user,"")
-#             db.session.add(usr)
-#             db.session.commit()
-            
-        
-#         flash("Login Successful")
-#         return redirect(url_for("user"))
+                    UK Government Announces 1.25M Dollar Investment To Transform English Chess
+                  </a>
+</h2>
+<div class="post-preview-meta">
+<div class="post-preview-meta-component">
+<a class="post-preview-meta-username" href="https://www.chess.com/news/member/tarjeijs" title="TarjeiJS">
+                      TarjeiJS
+                    </a>
+<div class="post-preview-meta-time">
+<span class="post-preview-meta-separator">|</span>
+<span class="icon-font-chess post-preview-meta-icon calendar"></span>
+<span class="post-preview-meta-content">
+<span title="Aug 28, 2023, 10:59:59 AM">18 hrs ago</span>
+</span>
+</div>
+</div>
+</div>
+<p class="post-preview-excerpt">
+                  Chess has been given a major boost in England after the U.K. government announced a combined package worth almost £1 million ($1.25 million) to fund the English Chess Federation (ECF). The funding will support children playing chess and impr...
+                </p>
+</article>
+<article class="post-preview-component">
+<a class="post-preview-image" href="https://www.chess.com/news/view/2023-world-rapid-team-championship-day-2">
+<img alt="Perfect Scores By Praggnanandhaa, Hou Make WR Chess Unstoppable" class="post-preview-thumbnail" src="https://images.chesscomfiles.com/uploads/v1/news/1275467.30c21d10.300x169o.8ca73aee703b.png" srcset="https://images.chesscomfiles.com/uploads/v1/news/1275467.30c21d10.300x169o.8ca73aee703b@2x.png"/>
+</a>
+<h2 class="post-preview-titlecontainer">
+<a class="post-preview-title" href="https://www.chess.com/news/view/2023-world-rapid-team-championship-day-2">
 
-    
-#     else :
-#         #if request.method=="GET"
-#         if "user" in session:
-#             flash("Already Logged In!!")
-#             return redirect(url_for("user"))
-        
-#         return render_template("login.html")
-    
-    
-# @app.route("/user/" , methods=["POST","GET"])
-# def user():
-#     email=None
-#     if "user" in session:
-#         user=session["user"]
-        
-#         if request.method=="POST":
-#             email=request.form["email"]
-#             session["email"]=email
-#             found_user=users.query.filter_by(name=user).first()
-#             found_user.email=email
-#             db.session.commit()
-#             flash("Email was saved")
-            
-#         else:
-#             if "email" in session:
-#                 email=session["email"]
-                
-#         return render_template("user.html",email=email)
+                    Perfect Scores By Praggnanandhaa, Hou Make WR Chess Unstoppable
+                  </a>
+</h2>
+<div class="post-preview-meta">
+<div class="post-preview-meta-component">
+<span class="post-preview-meta-title">NM</span>
+<a class="post-preview-meta-username" href="https://www.chess.com/news/member/nm_vanessa" title="NM_Vanessa">
+                      NM_Vanessa
+                    </a>
+<div class="post-preview-meta-time">
+<span class="post-preview-meta-separator">|</span>
+<span class="icon-font-chess post-preview-meta-icon calendar"></span>
+<span class="post-preview-meta-content">
+<span title="Aug 28, 2023, 7:10:03 AM">22 hrs ago</span>
+</span>
+</div>
+</div>
+</div>
+<p class="post-preview-excerpt">
+                  After two days, WR Chess soars ahead of the field at the World Rapid Team Championship. Led by perfect scores from GMs Praggnanandhaa Rameshbabu and Hou Yifan, this star-studded team has won eight matches in a row to gain a three-point margin...
+                </p>
+</article>
+<article class="post-preview-component">
+<a class="post-preview-image" href="https://www.chess.com/news/view/2023-world-rapid-team-championship-day-1">
+<img alt="Powerhouse WR Chess Takes Early Lead" class="post-preview-thumbnail" src="https://images.chesscomfiles.com/uploads/v1/news/1275249.df7b8867.300x169o.294fae287745.png" srcset="https://images.chesscomfiles.com/uploads/v1/news/1275249.df7b8867.300x169o.294fae287745@2x.png"/>
+</a>
+<h2 class="post-preview-titlecontainer">
+<a class="post-preview-title" href="https://www.chess.com/news/view/2023-world-rapid-team-championship-day-1">
 
-#     else:
-#         flash("You are not logged in!")
-#         return redirect(url_for("login"))
-    
-# @app.route("/logout/")
-# def logout():
-    
-#     if "user" in session:
-#         user=session["user"]
-#         flash(f"You have been logged out , {user}","info")
+                    Powerhouse WR Chess Takes Early Lead
+                  </a>
+</h2>
+<div class="post-preview-meta">
+<div class="post-preview-meta-component">
+<span class="post-preview-meta-title">NM</span>
+<a class="post-preview-meta-username" href="https://www.chess.com/news/member/nm_vanessa" title="NM_Vanessa">
+                      NM_Vanessa
+                    </a>
+<div class="post-preview-meta-time">
+<span class="post-preview-meta-separator">|</span>
+<span class="icon-font-chess post-preview-meta-icon calendar"></span>
+<span class="post-preview-meta-content">
+<span title="Aug 27, 2023, 6:30:55 AM">1 day ago</span>
+</span>
+</div>
+</div>
+</div>
+<p class="post-preview-excerpt">
+                  WR Chess, led by GM Wesley So, rose to clear first on day one of the World Rapid Team Championship 2023, winning all of their matches so far. 
+The top seed, GM Viswanathan Anand's Freedom, had a rocky fourth round, nearly losing to GM Pental...
+                </p>
+</article>
+<article class="post-preview-component">
+<a class="post-preview-image" href="https://www.chess.com/news/view/daniel-naroditsky-wins-bullet-brawl-august-26-2023">
+<img alt="Naroditsky Claims 4th Bullet Brawl Title" class="post-preview-thumbnail img-defer" data-src="https://images.chesscomfiles.com/uploads/v1/news/1275631.4be2f8d7.300x169o.16c987379c89.png" data-srcset="https://images.chesscomfiles.com/uploads/v1/news/1275631.4be2f8d7.300x169o.16c987379c89@2x.png" src="https://images.chesscomfiles.com/uploads/v1/news/1275631.4be2f8d7.300x169o.16c987379c89@2x.png"/>
+</a>
+<h2 class="post-preview-titlecontainer">
+<a class="post-preview-title" href="https://www.chess.com/news/view/daniel-naroditsky-wins-bullet-brawl-august-26-2023">
 
-#     session.pop("user",None)
-#     session.pop("email",None)
-#     return redirect(url_for("login"))
+                    Naroditsky Claims 4th Bullet Brawl Title
+                  </a>
+</h2>
+<div class="post-preview-meta">
+<div class="post-preview-meta-component">
+<span class="post-preview-meta-title">FM</span>
+<a class="post-preview-meta-username" href="https://www.chess.com/news/member/jackrodgers" title="JackRodgers">
+                      JackRodgers
+                    </a>
+<div class="post-preview-meta-time">
+<span class="post-preview-meta-separator">|</span>
+<span class="icon-font-chess post-preview-meta-icon calendar"></span>
+<span class="post-preview-meta-content">
+<span title="Aug 28, 2023, 8:55:09 AM">20 hrs ago</span>
+</span>
+</div>
+</div>
+</div>
+<p class="post-preview-excerpt">
+                  GM Daniel Naroditsky finished ahead of GMs Hikaru Nakamura and Andrew Tang in Saturday's Bullet Brawl after scoring 70 wins en route to amassing a 275 score. Following a loss to Nakamura in his first game, Naroditsky ran rampant and procured a 26-...
+                </p>
+</article>
+<article class="post-preview-component">
+<a class="post-preview-image" href="https://www.chess.com/news/view/fedoseev-wins-2023-abu-dhabi-chess-festival-masters">
+<img alt="Fedoseev Wins Abu Dhabi Chess Festival Masters, Tops Field Of 41 Grandmasters" class="post-preview-thumbnail img-defer" data-src="https://images.chesscomfiles.com/uploads/v1/news/1275153.c8785f7e.300x169o.a7305d65d5d0.png" data-srcset="https://images.chesscomfiles.com/uploads/v1/news/1275153.c8785f7e.300x169o.a7305d65d5d0@2x.png" src="https://images.chesscomfiles.com/uploads/v1/news/1275153.c8785f7e.300x169o.a7305d65d5d0@2x.png"/>
+</a>
+<h2 class="post-preview-titlecontainer">
+<a class="post-preview-title" href="https://www.chess.com/news/view/fedoseev-wins-2023-abu-dhabi-chess-festival-masters">
+
+                    Fedoseev Wins Abu Dhabi Chess Festival Masters, Tops Field Of 41 Grandmasters
+                  </a>
+</h2>
+<div class="post-preview-meta">
+<div class="post-preview-meta-component">
+<span class="post-preview-meta-title">NM</span>
+<a class="post-preview-meta-username" href="https://www.chess.com/news/member/anthonylevin" title="AnthonyLevin">
+                      AnthonyLevin
+                    </a>
+<div class="post-preview-meta-time">
+<span class="post-preview-meta-separator">|</span>
+<span class="icon-font-chess post-preview-meta-icon calendar"></span>
+<span class="post-preview-meta-content">
+<span title="Aug 25, 2023, 6:25:28 PM">3 days ago</span>
+</span>
+</div>
+</div>
+</div>
+<p class="post-preview-excerpt">
+                  The Russian-born, recently Slovenian GM Vladimir Fedoseev won the Abu Dhabi Chess Festival 2023 | Masters, which concluded on Thursday. Undefeated, he finished ahead of 40 other grandmasters (and 142 titled players total) with seven points in the ...
+                </p>
+</article>
+<article class="post-preview-component">
+<a class="post-preview-image" href="https://www.chess.com/news/view/2023-speed-chess-championship-main-event-qualifier-2-sarana-andreikin-win">
+<img alt="Andreikin Mounts Spectacular Comeback, Qualifies With Sarana" class="post-preview-thumbnail img-defer" data-src="https://images.chesscomfiles.com/uploads/v1/news/1274681.35d26cf3.300x169o.2af935f25320.png" data-srcset="https://images.chesscomfiles.com/uploads/v1/news/1274681.35d26cf3.300x169o.2af935f25320@2x.png" src="https://images.chesscomfiles.com/uploads/v1/news/1274681.35d26cf3.300x169o.2af935f25320@2x.png"/>
+</a>
+<h2 class="post-preview-titlecontainer">
+<a class="post-preview-title" href="https://www.chess.com/news/view/2023-speed-chess-championship-main-event-qualifier-2-sarana-andreikin-win">
+
+                    Andreikin Mounts Spectacular Comeback, Qualifies With Sarana
+                  </a>
+</h2>
+<div class="post-preview-meta">
+<div class="post-preview-meta-component">
+<span class="post-preview-meta-title">NM</span>
+<a class="post-preview-meta-username" href="https://www.chess.com/news/member/anthonylevin" title="AnthonyLevin">
+                      AnthonyLevin
+                    </a>
+<div class="post-preview-meta-time">
+<span class="post-preview-meta-separator">|</span>
+<span class="icon-font-chess post-preview-meta-icon calendar"></span>
+<span class="post-preview-meta-content">
+<span title="Aug 24, 2023, 4:48:08 PM">4 days ago</span>
+</span>
+</div>
+</div>
+</div>
+<p class="post-preview-excerpt">
+                  GMs Alexey Sarana and Dmitry Andreikin claimed the last spots in the 2023 Chess.com Speed Chess Championship Presented by Coinbase by winning their respective brackets in the SCC Qualifier 2 on Thursday. 
+Sarana had the best event of anybody, pla...
+                </p>
+</article>
+<article class="post-preview-component">
+<a class="post-preview-image" href="https://www.chess.com/news/view/fide-world-cup-2023-finals-game-3">
+<img alt="Carlsen Wins 1st World Cup, Caruana Places 3rd" class="post-preview-thumbnail img-defer" data-src="https://images.chesscomfiles.com/uploads/v1/news/1274649.02ee5022.300x169o.57e3df8748f8.png" data-srcset="https://images.chesscomfiles.com/uploads/v1/news/1274649.02ee5022.300x169o.57e3df8748f8@2x.png" src="https://images.chesscomfiles.com/uploads/v1/news/1274649.02ee5022.300x169o.57e3df8748f8@2x.png"/>
+</a>
+<h2 class="post-preview-titlecontainer">
+<a class="post-preview-title" href="https://www.chess.com/news/view/fide-world-cup-2023-finals-game-3">
+
+                    Carlsen Wins 1st World Cup, Caruana Places 3rd
+                  </a>
+</h2>
+<div class="post-preview-meta">
+<div class="post-preview-meta-component">
+<span class="post-preview-meta-title">WCM</span>
+<a class="post-preview-meta-username" href="https://www.chess.com/news/member/beccrajoy" title="beccrajoy">
+                      beccrajoy
+                    </a>
+<div class="post-preview-meta-time">
+<span class="post-preview-meta-separator">|</span>
+<span class="icon-font-chess post-preview-meta-icon calendar"></span>
+<span class="post-preview-meta-content">
+<span title="Aug 25, 2023, 12:44:08 AM">4 days ago</span>
+</span>
+</div>
+</div>
+</div>
+<p class="post-preview-excerpt">
+                  GM Magnus Carlsen can now say that he has won every significant classical chess title that he's set his sights on. The five-time world champion won his first World Cup crown by defeating GM Praggnanandhaa Rameshbabu 1.5-0.5 in the rapid tiebreaks ...
+                </p>
+</article>
+<article class="post-preview-component">
+<a class="post-preview-image" href="https://www.chess.com/news/view/fide-world-cup-2023-finals-game-2">
+<img alt="Caruana Wins, Carlsen-Praggnanandhaa Draw: Both Matches Move To Tiebreaks" class="post-preview-thumbnail img-defer" data-src="https://images.chesscomfiles.com/uploads/v1/news/1274345.2490b3c3.300x169o.fa83de8b288b.png" data-srcset="https://images.chesscomfiles.com/uploads/v1/news/1274345.2490b3c3.300x169o.fa83de8b288b@2x.png" src="https://images.chesscomfiles.com/uploads/v1/news/1274345.2490b3c3.300x169o.fa83de8b288b@2x.png"/>
+</a>
+<h2 class="post-preview-titlecontainer">
+<a class="post-preview-title" href="https://www.chess.com/news/view/fide-world-cup-2023-finals-game-2">
+
+                    Caruana Wins, Carlsen-Praggnanandhaa Draw: Both Matches Move To Tiebreaks
+                  </a>
+</h2>
+<div class="post-preview-meta">
+<div class="post-preview-meta-component">
+<span class="post-preview-meta-title">WCM</span>
+<a class="post-preview-meta-username" href="https://www.chess.com/news/member/beccrajoy" title="beccrajoy">
+                      beccrajoy
+                    </a>
+<div class="post-preview-meta-time">
+<span class="post-preview-meta-separator">|</span>
+<span class="icon-font-chess post-preview-meta-icon calendar"></span>
+<span class="post-preview-meta-content">
+<span title="Aug 23, 2023, 2:08:16 PM">5 days ago</span>
+</span>
+</div>
+</div>
+</div>
+<p class="post-preview-excerpt">
+                  The last classical games of the 2023 FIDE World Cup could not have been more different from each other. In the final between GM Magnus Carlsen and GM Praggnanandhaa Rameshbabu, the drawn outcome was predicted as early as move five, while in the th...
+                </p>
+</article>
+<article class="post-preview-component">
+<a class="post-preview-image" href="https://www.chess.com/news/view/nihal-nakamura-win-titled-tuesday-august-22-2023">
+<img alt="Nakamura Perfect On Tuesday Once Again" class="post-preview-thumbnail img-defer" data-src="https://images.chesscomfiles.com/uploads/v1/news/1274371.d32af895.300x169o.43cee812e50a.png" data-srcset="https://images.chesscomfiles.com/uploads/v1/news/1274371.d32af895.300x169o.43cee812e50a@2x.png" src="https://images.chesscomfiles.com/uploads/v1/news/1274371.d32af895.300x169o.43cee812e50a@2x.png"/>
+</a>
+<h2 class="post-preview-titlecontainer">
+<a class="post-preview-title" href="https://www.chess.com/news/view/nihal-nakamura-win-titled-tuesday-august-22-2023">
+
+                    Nakamura Perfect On Tuesday Once Again
+                  </a>
+</h2>
+<div class="post-preview-meta">
+<div class="post-preview-meta-component">
+<a class="post-preview-meta-username" href="https://www.chess.com/news/member/nathanielgreen" title="NathanielGreen">
+                      NathanielGreen
+                    </a>
+<div class="post-preview-meta-time">
+<span class="post-preview-meta-separator">|</span>
+<span class="icon-font-chess post-preview-meta-icon calendar"></span>
+<span class="post-preview-meta-content">
+<span title="Aug 25, 2023, 8:33:43 AM">3 days ago</span>
+</span>
+</div>
+</div>
+</div>
+<p class="post-preview-excerpt">
+                  After GM Hikaru Nakamura scored the first 11/11 in Titled Tuesday history on August 17, 2021, it took 98 weeks for someone to repeat the feat until GM Magnus Carlsen finally did so on July 4, 2023. But audiences only had to wait seven weeks f...
+                </p>
+</article>
+<article class="post-preview-component">
+<a class="post-preview-image" href="https://www.chess.com/news/view/chesspunks-champs">
+<img alt="Chess.com Supports First ChessPunks Champs Tournament For Adult Improvers" class="post-preview-thumbnail img-defer" data-src="https://images.chesscomfiles.com/uploads/v1/news/1274051.1924f9ee.300x169o.307c09458cbe.png" data-srcset="https://images.chesscomfiles.com/uploads/v1/news/1274051.1924f9ee.300x169o.307c09458cbe@2x.png" src="https://images.chesscomfiles.com/uploads/v1/news/1274051.1924f9ee.300x169o.307c09458cbe@2x.png"/>
+</a>
+<h2 class="post-preview-titlecontainer">
+<a class="post-preview-title" href="https://www.chess.com/news/view/chesspunks-champs">
+
+                    Chess.com Supports First ChessPunks Champs Tournament For Adult Improvers
+                  </a>
+</h2>
+<div class="post-preview-meta">
+<div class="post-preview-meta-component">
+<a class="post-preview-meta-username" href="https://www.chess.com/news/member/chesscom" title="CHESScom">
+                      CHESScom
+                    </a>
+<div class="post-preview-meta-time">
+<span class="post-preview-meta-separator">|</span>
+<span class="icon-font-chess post-preview-meta-icon calendar"></span>
+<span class="post-preview-meta-content">
+<span title="Aug 24, 2023, 12:14:02 AM">5 days ago</span>
+</span>
+</div>
+</div>
+</div>
+<p class="post-preview-excerpt">
+                  Go ahead ChessPunk, make my day! Now that the superb PogChamps 5 tournament is over, Chess.com is delighted to announce another exciting amateur event kicking off next month. 
+ChessPunks Champs is the new PogChamps-style event for all of us norma...
+                </p>
+</article>
+<article class="post-preview-component">
+<a class="post-preview-image" href="https://www.chess.com/news/view/judit-polgar-chesscom-lesson-course">
+<img alt="Learn From Judit Polgar On Her Path From Child Star To Super Grandmaster" class="post-preview-thumbnail img-defer" data-src="https://images.chesscomfiles.com/uploads/v1/news/1271993.d2e15668.300x169o.b032dc0e2a0e.png" data-srcset="https://images.chesscomfiles.com/uploads/v1/news/1271993.d2e15668.300x169o.b032dc0e2a0e@2x.png" src="https://images.chesscomfiles.com/uploads/v1/news/1271993.d2e15668.300x169o.b032dc0e2a0e@2x.png"/>
+</a>
+<h2 class="post-preview-titlecontainer">
+<a class="post-preview-title" href="https://www.chess.com/news/view/judit-polgar-chesscom-lesson-course">
+
+                    Learn From Judit Polgar On Her Path From Child Star To Super Grandmaster
+                  </a>
+</h2>
+<div class="post-preview-meta">
+<div class="post-preview-meta-component">
+<a class="post-preview-meta-username" href="https://www.chess.com/news/member/chesscom" title="CHESScom">
+                      CHESScom
+                    </a>
+<div class="post-preview-meta-time">
+<span class="post-preview-meta-separator">|</span>
+<span class="icon-font-chess post-preview-meta-icon calendar"></span>
+<span class="post-preview-meta-content">
+<span title="Aug 23, 2023, 7:05:00 AM">5 days ago</span>
+</span>
+</div>
+</div>
+</div>
+<p class="post-preview-excerpt">
+                  Universally recognized as the single greatest woman to ever play chess, in outlets ranging from the New York Times in 1997 to Chess.com in 2021, GM Judit Polgar is now ready to share the best games of her career as you've never seen them before......
+                </p>
+</article>
+<article class="post-preview-component">
+<a class="post-preview-image" href="https://www.chess.com/news/view/fide-world-cup-2023-finals-game-1">
+<img alt="Abasov Beats Caruana As Carlsen Holds Off Praggnanandhaa" class="post-preview-thumbnail img-defer" data-src="https://images.chesscomfiles.com/uploads/v1/news/1274085.019a0d76.300x169o.86ee8a3d3515.png" data-srcset="https://images.chesscomfiles.com/uploads/v1/news/1274085.019a0d76.300x169o.86ee8a3d3515@2x.png" src="https://images.chesscomfiles.com/uploads/v1/news/1274085.019a0d76.300x169o.86ee8a3d3515@2x.png"/>
+</a>
+<h2 class="post-preview-titlecontainer">
+<a class="post-preview-title" href="https://www.chess.com/news/view/fide-world-cup-2023-finals-game-1">
+
+                    Abasov Beats Caruana As Carlsen Holds Off Praggnanandhaa
+                  </a>
+</h2>
+<div class="post-preview-meta">
+<div class="post-preview-meta-component">
+<span class="post-preview-meta-title">WCM</span>
+<a class="post-preview-meta-username" href="https://www.chess.com/news/member/beccrajoy" title="beccrajoy">
+                      beccrajoy
+                    </a>
+<div class="post-preview-meta-time">
+<span class="post-preview-meta-separator">|</span>
+<span class="icon-font-chess post-preview-meta-icon calendar"></span>
+<span class="post-preview-meta-content">
+<span title="Aug 22, 2023, 6:47:35 PM">6 days ago</span>
+</span>
+</div>
+</div>
+</div>
+<p class="post-preview-excerpt">
+                  Neither player made progress toward their first World Cup victory as GM Magnus Carlsen held GM Praggnanandhaa Rameshbabu to a draw in the first game of the 2023 FIDE World Cup final.  A well-prepared Praggnanandhaa posed some problems to the ...
+                </p>
+</article>
+<article class="post-preview-component">
+<a class="post-preview-image" href="https://www.chess.com/news/view/2023-speed-chess-championship-main-event-qualifier-1-yu-vidit-win">
+<img alt="Armageddon Wins In Both Finals: Vidit, Yu Qualify For SCC 2023 Presented By Coinbase" class="post-preview-thumbnail img-defer" data-src="https://images.chesscomfiles.com/uploads/v1/news/1273721.0e05778d.300x169o.ccf4e271278f.png" data-srcset="https://images.chesscomfiles.com/uploads/v1/news/1273721.0e05778d.300x169o.ccf4e271278f@2x.png" src="https://images.chesscomfiles.com/uploads/v1/news/1273721.0e05778d.300x169o.ccf4e271278f@2x.png"/>
+</a>
+<h2 class="post-preview-titlecontainer">
+<a class="post-preview-title" href="https://www.chess.com/news/view/2023-speed-chess-championship-main-event-qualifier-1-yu-vidit-win">
+
+                    Armageddon Wins In Both Finals: Vidit, Yu Qualify For SCC 2023 Presented By Coinbase
+                  </a>
+</h2>
+<div class="post-preview-meta">
+<div class="post-preview-meta-component">
+<span class="post-preview-meta-title">NM</span>
+<a class="post-preview-meta-username" href="https://www.chess.com/news/member/anthonylevin" title="AnthonyLevin">
+                      AnthonyLevin
+                    </a>
+<div class="post-preview-meta-time">
+<span class="post-preview-meta-separator">|</span>
+<span class="icon-font-chess post-preview-meta-icon calendar"></span>
+<span class="post-preview-meta-content">
+<span title="Aug 24, 2023, 2:55:26 PM">4 days ago</span>
+</span>
+</div>
+</div>
+</div>
+<p class="post-preview-excerpt">
+                  GMs Yu Yangyi and Vidit Gujrathi have made it into the 2023 Chess.com Speed Chess Championship Presented by Coinbase after claiming two spots in the first Qualifier on Tuesday. 
+Yu finished second in the Swiss on day one and, on the second day, w...
+                </p>
+</article>
+<article class="post-preview-component">
+<a class="post-preview-image" href="https://www.chess.com/news/view/fide-world-cup-2023-round-7-3">
+<img alt="Praggnanandhaa-Carlsen In Final; Goryachkina Takes Women's Title" class="post-preview-thumbnail img-defer" data-src="https://images.chesscomfiles.com/uploads/v1/news/1273635.8888bfb1.300x169o.5599027d22f1.png" data-srcset="https://images.chesscomfiles.com/uploads/v1/news/1273635.8888bfb1.300x169o.5599027d22f1@2x.png" src="https://images.chesscomfiles.com/uploads/v1/news/1273635.8888bfb1.300x169o.5599027d22f1@2x.png"/>
+</a>
+<h2 class="post-preview-titlecontainer">
+<a class="post-preview-title" href="https://www.chess.com/news/view/fide-world-cup-2023-round-7-3">
+
+                    Praggnanandhaa-Carlsen In Final; Goryachkina Takes Women's Title
+                  </a>
+</h2>
+<div class="post-preview-meta">
+<div class="post-preview-meta-component">
+<a class="post-preview-meta-username" href="https://www.chess.com/news/member/colin_mcgourty" title="Colin_McGourty">
+                      Colin_McGourty
+                    </a>
+<div class="post-preview-meta-time">
+<span class="post-preview-meta-separator">|</span>
+<span class="icon-font-chess post-preview-meta-icon calendar"></span>
+<span class="post-preview-meta-content">
+<span title="Aug 21, 2023, 11:40:58 PM">7 days ago</span>
+</span>
+</div>
+</div>
+</div>
+<p class="post-preview-excerpt">
+                  Indian sensation GM Praggnanandhaa Rameshbabu will play world number-one GM Magnus Carlsen in the final of the 2023 FIDE World Cup after the 18-year-old defeated GM Fabiano Caruana 3.5-2.5 in a semifinal decided by a single tiebreak win. 
+GM...
+                </p>
+</article>
+<article class="post-preview-component">
+<a class="post-preview-image" href="https://www.chess.com/news/view/fide-world-cup-2023-round-7-2">
+<img alt="Carlsen Books Spot In Final; Salimova Misses Chance To Claim Women's Crown" class="post-preview-thumbnail img-defer" data-src="https://images.chesscomfiles.com/uploads/v1/news/1273429.07fa0a7a.300x169o.3d8d84dcd7ba.png" data-srcset="https://images.chesscomfiles.com/uploads/v1/news/1273429.07fa0a7a.300x169o.3d8d84dcd7ba@2x.png" src="https://images.chesscomfiles.com/uploads/v1/news/1273429.07fa0a7a.300x169o.3d8d84dcd7ba@2x.png"/>
+</a>
+<h2 class="post-preview-titlecontainer">
+<a class="post-preview-title" href="https://www.chess.com/news/view/fide-world-cup-2023-round-7-2">
+
+                    Carlsen Books Spot In Final; Salimova Misses Chance To Claim Women's Crown
+                  </a>
+</h2>
+<div class="post-preview-meta">
+<div class="post-preview-meta-component">
+<span class="post-preview-meta-title">FM</span>
+<a class="post-preview-meta-username" href="https://www.chess.com/news/member/jackrodgers" title="JackRodgers">
+                      JackRodgers
+                    </a>
+<div class="post-preview-meta-time">
+<span class="post-preview-meta-separator">|</span>
+<span class="icon-font-chess post-preview-meta-icon calendar"></span>
+<span class="post-preview-meta-content">
+<span title="Aug 21, 2023, 8:09:22 AM">7 days ago</span>
+</span>
+</div>
+</div>
+</div>
+<p class="post-preview-excerpt">
+                  GM Magnus Carlsen has booked his spot in the 2023 FIDE World Cup final after winning his match against GM Nijat Abasov by a margin of 1.5/2. Abasov fought valiantly to keep his world cup hopes alive and played a near-perfect game on Sunday however...
+                </p>
+</article>
+<article class="post-preview-component">
+<a class="post-preview-image" href="https://www.chess.com/news/view/hikaru-nakamura-wins-bullet-brawl-august-week-3">
+<img alt="Nakamura Sets New Bullet Brawl Record With 83 Wins" class="post-preview-thumbnail img-defer" data-src="https://images.chesscomfiles.com/uploads/v1/news/1272921.5bff13bc.300x169o.e31b8fcddfaa.png" data-srcset="https://images.chesscomfiles.com/uploads/v1/news/1272921.5bff13bc.300x169o.e31b8fcddfaa@2x.png" src="https://images.chesscomfiles.com/uploads/v1/news/1272921.5bff13bc.300x169o.e31b8fcddfaa@2x.png"/>
+</a>
+<h2 class="post-preview-titlecontainer">
+<a class="post-preview-title" href="https://www.chess.com/news/view/hikaru-nakamura-wins-bullet-brawl-august-week-3">
+
+                    Nakamura Sets New Bullet Brawl Record With 83 Wins
+                  </a>
+</h2>
+<div class="post-preview-meta">
+<div class="post-preview-meta-component">
+<span class="post-preview-meta-title">FM</span>
+<a class="post-preview-meta-username" href="https://www.chess.com/news/member/jackrodgers" title="JackRodgers">
+                      JackRodgers
+                    </a>
+<div class="post-preview-meta-time">
+<span class="post-preview-meta-separator">|</span>
+<span class="icon-font-chess post-preview-meta-icon calendar"></span>
+<span class="post-preview-meta-content">
+<span title="Aug 20, 2023, 2:29:33 PM">8 days ago</span>
+</span>
+</div>
+</div>
+</div>
+<p class="post-preview-excerpt">
+                  Eighty-three wins, five draws, and three losses was the astounding scorecard posted by GM Hikaru Nakamura in August's third Bullet Brawl, resulting in a record-breaking 313 score. The rampage, which saw him finish 73 points ahead of the second-pla...
+                </p>
+</article>
+<article class="post-preview-component">
+<a class="post-preview-image" href="https://www.chess.com/news/view/fide-world-cup-2023-round-7-1">
+<img alt="Carlsen On The Brink Of First World Cup Final" class="post-preview-thumbnail img-defer" data-src="https://images.chesscomfiles.com/uploads/v1/news/1272923.3bf5e1a9.300x169o.2593f4447af6.png" data-srcset="https://images.chesscomfiles.com/uploads/v1/news/1272923.3bf5e1a9.300x169o.2593f4447af6@2x.png" src="https://images.chesscomfiles.com/uploads/v1/news/1272923.3bf5e1a9.300x169o.2593f4447af6@2x.png"/>
+</a>
+<h2 class="post-preview-titlecontainer">
+<a class="post-preview-title" href="https://www.chess.com/news/view/fide-world-cup-2023-round-7-1">
+
+                    Carlsen On The Brink Of First World Cup Final
+                  </a>
+</h2>
+<div class="post-preview-meta">
+<div class="post-preview-meta-component">
+<span class="post-preview-meta-title">FM</span>
+<a class="post-preview-meta-username" href="https://www.chess.com/news/member/jackrodgers" title="JackRodgers">
+                      JackRodgers
+                    </a>
+<div class="post-preview-meta-time">
+<span class="post-preview-meta-separator">|</span>
+<span class="icon-font-chess post-preview-meta-icon calendar"></span>
+<span class="post-preview-meta-content">
+<span title="Aug 21, 2023, 7:26:41 AM">7 days ago</span>
+</span>
+</div>
+</div>
+</div>
+<p class="post-preview-excerpt">
+                  After surviving 12 games of classical games against some of the world's best players without a single loss, GM Nijat Abasov finally fell at the hands of GM Magnus Carlsen on Saturday at the 2023 FIDE World Cup. Though the world number one secured ...
+                </p>
+</article>
+<article class="post-preview-component">
+<a class="post-preview-image" href="https://www.chess.com/news/view/pogchamps-5-finals">
+<img alt="CDawgVA Delivers Swindle Of The Century To Become The Fifth PogChampion" class="post-preview-thumbnail img-defer" data-src="https://images.chesscomfiles.com/uploads/v1/news/1272817.2620c849.300x169o.32a4b8ac1c48.png" data-srcset="https://images.chesscomfiles.com/uploads/v1/news/1272817.2620c849.300x169o.32a4b8ac1c48@2x.png" src="https://images.chesscomfiles.com/uploads/v1/news/1272817.2620c849.300x169o.32a4b8ac1c48@2x.png"/>
+</a>
+<h2 class="post-preview-titlecontainer">
+<a class="post-preview-title" href="https://www.chess.com/news/view/pogchamps-5-finals">
+
+                    CDawgVA Delivers Swindle Of The Century To Become The Fifth PogChampion
+                  </a>
+</h2>
+<div class="post-preview-meta">
+<div class="post-preview-meta-component">
+<a class="post-preview-meta-username" href="https://www.chess.com/news/member/pedropinhata" title="PedroPinhata">
+                      PedroPinhata
+                    </a>
+<div class="post-preview-meta-time">
+<span class="post-preview-meta-separator">|</span>
+<span class="icon-font-chess post-preview-meta-icon calendar"></span>
+<span class="post-preview-meta-content">
+<span title="Aug 21, 2023, 6:18:30 AM">7 days ago</span>
+</span>
+</div>
+</div>
+</div>
+<p class="post-preview-excerpt">
+                  Drama, plot twists, and illegal moves marked the live PogChamps 5 Finals—the first in-person Pog event in history. As the remaining four creators gathered in Los Angeles to play for PogChamps glory, no one could've predicted how the matches ...
+                </p>
+</article>
+<article class="post-preview-component">
+<a class="post-preview-image" href="https://www.chess.com/news/view/chess-clash-the-unique-event-featuring-clash-of-clans-clash-royale">
+<img alt="Launching Chess Clash: The Unique Event Featuring Clash of Clans, Clash Royale And A Galaxy Of Stars" class="post-preview-thumbnail img-defer" data-src="https://images.chesscomfiles.com/uploads/v1/news/1271007.0c5da650.300x169o.87232d5f6e4e.png" data-srcset="https://images.chesscomfiles.com/uploads/v1/news/1271007.0c5da650.300x169o.87232d5f6e4e@2x.png" src="https://images.chesscomfiles.com/uploads/v1/news/1271007.0c5da650.300x169o.87232d5f6e4e@2x.png"/>
+</a>
+<h2 class="post-preview-titlecontainer">
+<a class="post-preview-title" href="https://www.chess.com/news/view/chess-clash-the-unique-event-featuring-clash-of-clans-clash-royale">
+
+                    Launching Chess Clash: The Unique Event Featuring Clash of Clans, Clash Royale And A Galaxy Of Stars
+                  </a>
+</h2>
+<div class="post-preview-meta">
+<div class="post-preview-meta-component">
+<a class="post-preview-meta-username" href="https://www.chess.com/news/member/leon_watson" title="Leon_Watson">
+                      Leon_Watson
+                    </a>
+<div class="post-preview-meta-time">
+<span class="post-preview-meta-separator">|</span>
+<span class="icon-font-chess post-preview-meta-icon calendar"></span>
+<span class="post-preview-meta-content">
+<span title="Aug 21, 2023, 2:27:41 AM">8 days ago</span>
+</span>
+</div>
+</div>
+</div>
+<p class="post-preview-excerpt">
+                  Strategy fans take note—a unique star-studded multi-game crossover event that pits big names in chess against stars of Clash of Clans and Clash Royale is coming to Chess.com. 
+IM Levy Rozman and WFM Alexandra Botez, two of the most followed...
+                </p>
+</article>
+<article class="post-preview-component">
+<a class="post-preview-image" href="https://www.chess.com/news/view/fide-publishes-controversial-new-transgender-policy">
+<img alt="FIDE Publishes Controversial New Transgender Policy" class="post-preview-thumbnail img-defer" data-src="https://images.chesscomfiles.com/uploads/v1/news/1272339.c876fa79.300x169o.2eca45d017a9.png" data-srcset="https://images.chesscomfiles.com/uploads/v1/news/1272339.c876fa79.300x169o.2eca45d017a9@2x.png" src="https://images.chesscomfiles.com/uploads/v1/news/1272339.c876fa79.300x169o.2eca45d017a9@2x.png"/>
+</a>
+<h2 class="post-preview-titlecontainer">
+<a class="post-preview-title" href="https://www.chess.com/news/view/fide-publishes-controversial-new-transgender-policy">
+
+                    FIDE Publishes Controversial New Transgender Policy
+                  </a>
+</h2>
+<div class="post-preview-meta">
+<div class="post-preview-meta-component">
+<a class="post-preview-meta-username" href="https://www.chess.com/news/member/tarjeijs" title="TarjeiJS">
+                      TarjeiJS
+                    </a>
+<div class="post-preview-meta-time">
+<span class="post-preview-meta-separator">|</span>
+<span class="icon-font-chess post-preview-meta-icon calendar"></span>
+<span class="post-preview-meta-content">
+<span title="Aug 18, 2023, 8:55:01 AM">10 days ago</span>
+</span>
+</div>
+</div>
+</div>
+<p class="post-preview-excerpt">
+                  FIDE has come under heavy criticism after publishing a new policy that states that transgender women are banned from taking part in official female-only events until the federation conducts "further analysis" that can last up to two years. 
+The c...
+                </p>
+</article>
+<article class="post-preview-component">
+<a class="post-preview-image" href="https://www.chess.com/news/view/fide-world-cup-2023-round-6-3">
+<img alt="Praggnanandhaa Prevails In Dramatic Tiebreak; Salimova Continues Dream Run" class="post-preview-thumbnail img-defer" data-src="https://images.chesscomfiles.com/uploads/v1/news/1272243.f7843338.300x169o.ddf28abe61a7.jpg" data-srcset="https://images.chesscomfiles.com/uploads/v1/news/1272243.f7843338.300x169o.ddf28abe61a7@2x.jpg" src="https://images.chesscomfiles.com/uploads/v1/news/1272243.f7843338.300x169o.ddf28abe61a7@2x.jpg"/>
+</a>
+<h2 class="post-preview-titlecontainer">
+<a class="post-preview-title" href="https://www.chess.com/news/view/fide-world-cup-2023-round-6-3">
+
+                    Praggnanandhaa Prevails In Dramatic Tiebreak; Salimova Continues Dream Run
+                  </a>
+</h2>
+<div class="post-preview-meta">
+<div class="post-preview-meta-component">
+<span class="post-preview-meta-title">IM</span>
+<a class="post-preview-meta-username" href="https://www.chess.com/news/member/vsaravanan" title="VSaravanan">
+                      VSaravanan
+                    </a>
+<div class="post-preview-meta-time">
+<span class="post-preview-meta-separator">|</span>
+<span class="icon-font-chess post-preview-meta-icon calendar"></span>
+<span class="post-preview-meta-content">
+<span title="Aug 18, 2023, 4:25:13 AM">11 days ago</span>
+</span>
+</div>
+</div>
+</div>
+<p class="post-preview-excerpt">
+                  GM Praggnanandhaa Rameshbabu and GM Arjun Erigaisi were engaged in 1-1 deadlocks in three sets of tiebreak games at the 2023 FIDE World Cup. After two draws in the 25+10 rapid tiebreaks, Praggnanandhaa twice took the lead by winning the first game...
+                </p>
+</article>
+<article class="post-preview-component">
+<a class="post-preview-image" href="https://www.chess.com/news/view/judit-polgar-chessconnectsus-championship-registration">
+<img alt="Registration For Judit Polgar's #ChessConnectsUs Championship Is Open Now" class="post-preview-thumbnail img-defer" data-src="https://images.chesscomfiles.com/uploads/v1/news/1271525.0207e935.300x169o.ed8a31eefcef.png" data-srcset="https://images.chesscomfiles.com/uploads/v1/news/1271525.0207e935.300x169o.ed8a31eefcef@2x.png" src="https://images.chesscomfiles.com/uploads/v1/news/1271525.0207e935.300x169o.ed8a31eefcef@2x.png"/>
+</a>
+<h2 class="post-preview-titlecontainer">
+<a class="post-preview-title" href="https://www.chess.com/news/view/judit-polgar-chessconnectsus-championship-registration">
+
+                    Registration For Judit Polgar's #ChessConnectsUs Championship Is Open Now
+                  </a>
+</h2>
+<div class="post-preview-meta">
+<div class="post-preview-meta-component">
+<a class="post-preview-meta-username" href="https://www.chess.com/news/member/chesscom" title="CHESScom">
+                      CHESScom
+                    </a>
+<div class="post-preview-meta-time">
+<span class="post-preview-meta-separator">|</span>
+<span class="icon-font-chess post-preview-meta-icon calendar"></span>
+<span class="post-preview-meta-content">
+<span title="Aug 24, 2023, 6:32:26 AM">4 days ago</span>
+</span>
+</div>
+</div>
+</div>
+<p class="post-preview-excerpt">
+                  Chess.com is pleased to announce the inaugural #ChessConnectsUs Championship, a special event held as part of GM Judit Polgar's Global Chess Festival on October 14, 2023. 
+This unique competition gives chess clubs and organizations from around th...
+                </p>
+</article>
+<article class="post-preview-component">
+<a class="post-preview-image" href="https://www.chess.com/news/view/gothamchess-tops-amazon-lists-with-first-book">
+<img alt="'GothamChess' Tops Amazon Lists More Than Two Months Before Release Of First Book" class="post-preview-thumbnail img-defer" data-src="https://images.chesscomfiles.com/uploads/v1/news/1268937.70ac7136.300x169o.f4762b245f32.png" data-srcset="https://images.chesscomfiles.com/uploads/v1/news/1268937.70ac7136.300x169o.f4762b245f32@2x.png" src="https://images.chesscomfiles.com/uploads/v1/news/1268937.70ac7136.300x169o.f4762b245f32@2x.png"/>
+</a>
+<h2 class="post-preview-titlecontainer">
+<a class="post-preview-title" href="https://www.chess.com/news/view/gothamchess-tops-amazon-lists-with-first-book">
+
+                    'GothamChess' Tops Amazon Lists More Than Two Months Before Release Of First Book
+                  </a>
+</h2>
+<div class="post-preview-meta">
+<div class="post-preview-meta-component">
+<a class="post-preview-meta-username" href="https://www.chess.com/news/member/tarjeijs" title="TarjeiJS">
+                      TarjeiJS
+                    </a>
+<div class="post-preview-meta-time">
+<span class="post-preview-meta-separator">|</span>
+<span class="icon-font-chess post-preview-meta-icon calendar"></span>
+<span class="post-preview-meta-content">
+<span title="Aug 17, 2023, 12:05:57 PM">11 days ago</span>
+</span>
+</div>
+</div>
+</div>
+<p class="post-preview-excerpt">
+                  IM Levy Rozman's first chess book is months away from being released, but it has already sold more than 12,000 copies and made it to #1 on Amazon's best-seller lists. 
+The online chess streamer, popularly known as GothamChess, is the world's bigg...
+                </p>
+</article>
+</div>
+<div class="index-pagination">
+<div class="ui_pagination-component">
+<a aria-label="Back to Top" class="ui_pagination-item-component ui_pagination-top pagination-scroll-to-top">
+<span class="icon-font-chess ui_pagination-item-icon chevron-up"></span>
+<span>
+        Top
+      </span>
+</a>
+<nav class="ui_pagination-navigation">
+<div aria-label="Previous Page" class="ui_pagination-item-component pagination-prev ui_pagination-item-disabled">
+<span class="icon-font-chess ui_pagination-item-icon chevron-left"></span>
+</div>
+<a aria-label="Page 1" class="ui_pagination-item-component ui_pagination-item-active" href="https://www.chess.com/news">
+<span>
+        1
+      </span>
+</a>
+<a aria-label="Page 2" class="ui_pagination-item-component" href="https://www.chess.com/news?page=2">
+<span>
+        2
+      </span>
+</a>
+<a aria-label="Next Page" class="ui_pagination-item-component pagination-next" href="https://www.chess.com/news?page=2">
+<span class="icon-font-chess ui_pagination-item-icon chevron-right"></span>
+</a>
+</nav>
+</div>
+</div>
+</div>
