@@ -1,5 +1,11 @@
 # Chess Website Project Report
 
+## How to Run the Project
+
+Clone the repositiory using '''git clone https://github.com/Shreyas529/chess-website.'''
+Then change your directory to the chess-website directory in your terminal and run the command '''pip install -r requirments.txt'''.
+Open and run server.py in your choice of code editor or run python server.py in your terminal
+
 ## Overview
 
 The Chess Website project is a comprehensive web application aimed at providing chess enthusiasts with a platform to access various chess-related information and features. The project encompasses functionalities such as user authentication, displaying chess news, leaderboards, tournament details, chess rules, opening strategies, and user profile statistics. Additionally, users can log in using their Lichess accounts, making it easier to manage their chess-related activities.
