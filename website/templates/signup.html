@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="{{ url_for('static' , filename='/css/signup.css')}}">
+</head>
+<body>
+    <form class="card" method="POST">
+
+        <h1>Sign Up</h1>
+
+        <div class="flashed-msg">
+          {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            {% for category , message in messages %}
+              {% if category == 'error' %}
+                <div style="color: red;">
+                  {{message}}
+                </div>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+          {% endwith %}
+        </div>
+
+        <div>
+          <input type="text" name="name" placeholder="Name" />
+        </div>
+  
+        <div>
+          <input type="email" name="email" placeholder="Email"/>
+        </div>
+  
+        <div>
+          <input type="password" name="password" placeholder="Password"/>
+        </div>
+
+        <div>
+          <input type="password" name="confirm" placeholder="Confirm Password"/>
+        </div>
+
+        <div><input type="submit" name="submit"></div>
+
+        <div>
+            Already a member? <a href="/login.html">Log in</a>
+            <p><a href="../home">Home Page</a></p>
+        </div>
+      </form>
+</body>
+</html>
